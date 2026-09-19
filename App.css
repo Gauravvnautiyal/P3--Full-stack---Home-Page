@@ -1,0 +1,502 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =========================================
+   MAIN APP
+========================================= */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  font-size: 14px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.navbar-buttons button {
+  padding: 6px 12px;
+
+  border: 1px solid #999999;
+  border-radius: 4px;
+
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.navbar-buttons .signup-btn {
+  background-color: #07999d;
+  color: white;
+
+  border-color: #07999d;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  text-align: center;
+
+  padding: 15px 0 5px;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+.hero p {
+  margin: 4px 0 0;
+
+  font-size: 11px;
+  color: #555555;
+}
+
+
+/* =========================================
+   CONTENT SECTION
+========================================= */
+
+.content-section {
+  width: 560px;
+  max-width: 90%;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.section-title {
+  margin: 5px 0 12px;
+
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+/* =========================================
+   CARDS
+========================================= */
+
+.cards {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  width: 150px;
+
+  text-align: left;
+}
+
+
+/* =========================================
+   REAL IMAGES
+========================================= */
+
+.image-placeholder {
+  width: 102px;
+  height: 70px;
+
+  margin-bottom: 6px;
+
+  border: 2px solid #111111;
+
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.card h3 {
+  margin: 3px 0;
+
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.description {
+  margin: 0;
+
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.example {
+  margin: 2px 0 5px;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.card-info {
+  width: 102px;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 2px;
+
+  border-top: 1px solid #222222;
+
+  font-size: 9px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+
+  margin-right: 8px;
+
+  font-weight: bold;
+}
+
+.star {
+  margin-right: 2px;
+
+  color: #e5a400;
+
+  font-size: 14px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+
+/* =========================================
+   GREY BUTTONS
+========================================= */
+
+.grey-button {
+  margin-top: 13px;
+  margin-bottom: 13px;
+
+  padding: 5px 16px;
+
+  border: none;
+  border-radius: 15px;
+
+  background-color: #c8c8c8;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+.grey-button:hover {
+  background-color: #b5b5b5;
+}
+
+
+/* =========================================
+   TUTORIAL SECTION
+========================================= */
+
+.tutorials-section {
+  margin-top: 0;
+}
+
+.tutorials-section .section-title {
+  margin-top: 0;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 460px;
+  max-width: 90%;
+
+  margin: 8px auto 0;
+
+  background-color: #07999d;
+
+  color: #111111;
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.newsletter {
+  width: 100%;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 7px;
+
+  gap: 4px;
+
+  background-color: #dddddd;
+}
+
+.newsletter-title {
+  font-size: 12px;
+  font-weight: bold;
+
+  white-space: nowrap;
+}
+
+.newsletter input {
+  width: 140px;
+  height: 18px;
+
+  padding: 2px 5px;
+
+  border: 1px solid #888888;
+
+  background-color: #ffffff;
+
+  font-size: 8px;
+}
+
+.newsletter button {
+  height: 18px;
+
+  padding: 0 9px;
+
+  border: 1px solid #aaaaaa;
+
+  background-color: #bbbbbb;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   FOOTER CONTENT
+========================================= */
+
+.footer-content {
+  min-height: 105px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5px 15px 10px;
+}
+
+.footer-column {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  margin: 0 0 5px;
+
+  font-size: 14px;
+}
+
+.footer-column a {
+  margin: 2px 0;
+
+  font-size: 9px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   SOCIAL MEDIA
+========================================= */
+
+.social-icons {
+  display: flex;
+
+  gap: 5px;
+
+  margin-top: 5px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #eeeeee;
+
+  border-radius: 2px;
+
+  color: #555555;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+  padding-bottom: 13px;
+
+  text-align: center;
+}
+
+.footer-bottom h3 {
+  margin: 0 0 6px;
+
+  font-size: 13px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.footer-links a {
+  font-size: 9px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE / SMALL SCREEN
+========================================= */
+
+@media (max-width: 650px) {
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .cards {
+    gap: 15px;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .newsletter-title {
+    font-size: 9px;
+  }
+
+  .newsletter input {
+    width: 100px;
+  }
+
+  .newsletter button {
+    padding: 0 6px;
+  }
+}
